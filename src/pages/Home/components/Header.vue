@@ -5,7 +5,7 @@
 		</div>
 		<div class="header-input">
 			<span class="iconfont">&#xe632;</span>
-		输入城市景点/游玩主题
+		输入搜索内容
 	    </div>
 		<div class="header-right">
 			城市
