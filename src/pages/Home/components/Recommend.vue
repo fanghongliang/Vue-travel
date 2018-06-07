@@ -2,7 +2,7 @@
 	<div>
 		<div class="title">热销推荐</div>
 		<ul>
-			<li class="item border-bottom" v-for="item of recommendList" 
+			<li class="item border-bottom" v-for="item of list" 
 			:key="item.id"> 
 				<img class="item-img" :src="item.imgUrl"/>
 				<div class="item-info">
@@ -18,31 +18,9 @@
 <script>
 	export default {
 		name:'HomeRecommend',
-		data () {
-			return {
-				recommendList:[{
-					id:'0001',
-					imgUrl:'http://img1.qunarzz.com/wugc/p45/201306/08/a6a0b72767ad783093835fbb.jpg_150x150_f5de9a9e.jpg',
-					title:'布达拉宫',
-					desc:'今年5.1以前景点全部免费哦了'
-				},{
-					id:'0002',
-					imgUrl:'http://img1.qunarzz.com/wugc/p45/201306/08/a6a0b72767ad783093835fbb.jpg_150x150_f5de9a9e.jpg',
-					title:'布达拉宫',
-					desc:'今年5.1以前景点全部免费哦了'
-				},{
-					id:'0003',
-					imgUrl:'http://img1.qunarzz.com/wugc/p45/201306/08/a6a0b72767ad783093835fbb.jpg_150x150_f5de9a9e.jpg',
-					title:'布达拉宫',
-					desc:'今年5.1以前景点全部免费哦了'
-				},{
-					id:'0004',
-					imgUrl:'http://img1.qunarzz.com/wugc/p45/201306/08/a6a0b72767ad783093835fbb.jpg_150x150_f5de9a9e.jpg',
-					title:'布达拉宫',
-					desc:'今年5.1以前景点全部免费哦了'
-				}]
-			}
-		}
+		props:{
+			list:Array
+		},
 	}
 </script>
 
