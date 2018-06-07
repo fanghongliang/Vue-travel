@@ -7,10 +7,12 @@
 			<span class="iconfont">&#xe632;</span>
 		输入搜索内容
 	    </div>
-		<div class="header-right">
-			{{this.city}}
-			<span class="iconfont">&#xe6aa;</span>
-		</div>
+	    <router-link to='/city'>
+			<div class="header-right">
+				{{this.city}}
+				<span class="iconfont">&#xe6aa;</span>
+			</div>
+	    </router-link>
 	</div>
 </template>
 
@@ -27,7 +29,7 @@
 	@import '~styles/varibles.style'
 	.header
 	  display: flex
-	  line-height: .86rem
+	  line-height: $headerHeight
 	  background:$bgColor
 	  color:#fff
 	  .header-left
@@ -51,4 +53,5 @@
 	    width: 1.24rem
 	    float: right
 	    text-align:center
+	    color:#fff
 </style>
