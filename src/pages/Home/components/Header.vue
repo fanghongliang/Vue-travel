@@ -8,7 +8,7 @@
 		输入搜索内容
 	    </div>
 	    <router-link to='/city'>
-			<div class="header-right">
+			<div class="header-right">	
 				{{this.city}}
 				<span class="iconfont">&#xe6aa;</span>
 			</div>
