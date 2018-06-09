@@ -10,7 +10,7 @@
 					  @change="handleLetterChange">
 		</CityAlphabet>
 	</div>
-</template>
+</template> 
 
 <script>
 	import axios from 'axios'
