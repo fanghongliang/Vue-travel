@@ -28,8 +28,8 @@
 		methods: {
 			handleScroll(){
 				const top = document.documentElement.scrollTop
-				if(top > 60 ) {
-					let opacity = top / 140
+				if(top > 80 ) {
+					let opacity = top / 163
 					opacity = opacity > 1 ? 1:opacity
 					this.opacityStyle = {opacity}
 					this.showAbs = false
@@ -40,6 +40,9 @@
 		},
 		activated () {
 			window.addEventListener('scroll',this.handleScroll)
+		},
+		deactivated () {  //页面即将隐藏时执行
+			window.removeEventListener('scroll',this.handleScroll)
 		}
 	}
 </script>
@@ -60,6 +63,7 @@
 			color:#fff
 			font-size:.4rem
 	.header-fixed
+		z-index:2
 		position:fixed
 		top:0
 		left:0
