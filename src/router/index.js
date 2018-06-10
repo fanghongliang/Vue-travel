@@ -5,7 +5,7 @@ import City from '@/pages/city/City.vue'
 import Detail from '@/pages/detail/Detail.vue'   
   
    
-//@指src目录
+//@b别名src目录
 
 Vue.use(Router)
 
