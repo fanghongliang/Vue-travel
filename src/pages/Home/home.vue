@@ -17,6 +17,7 @@
 	import axios from 'axios'
 	import {mapState} from 'vuex'
 
+	axios.defaults.baseURL = "http://127.0.0.1:3000"
 	export default {
 		name:"home",
 		components: {
@@ -40,18 +41,19 @@
 		},
 		methods : {
 			getHomeInfo () {
-				axios.get('/api/index.json?city='+this.city)
+				axios.post('/login', {"userName": "约翰19"})
 					.then(this.getHomeInfoSucc)
 			},
 			getHomeInfoSucc(res) {
 				res = res.data
-				if(res.ret && res.data) {
-					const data = res.data
-					this.swiperList = data.swiperList
-					this.iconList = data.iconList
-					this.recommendList = data.recommendList
-					this.weekendList = data.weekendList
-				}
+				console.log('获得数据', res)
+				// if(res.ret && res.data) {
+				// 	const data = res.data
+				// 	this.swiperList = data.swiperList
+				// 	this.iconList = data.iconList
+				// 	this.recommendList = data.recommendList
+				// 	this.weekendList = data.weekendList
+				// }
 			}
 		},
 		mounted () {
