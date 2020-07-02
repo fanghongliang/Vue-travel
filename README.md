@@ -1,6 +1,7 @@
-# travel
-
-> A Vue.js project
+# Vue-travel
+------
+> A Vue.js project  
+> 模仿去哪网的界面，使用Vue实现
 
 ## Build Setup
 
@@ -17,12 +18,12 @@ npm run build
 # build for production and view the bundle analyzer report
 npm run build --report
 ```
-# server
+## Server  
 
-> A Express Object 
-> Vue 前端对应的后端api程序
+使用 Express、Mysql、ORM 实现的后端api程序
 
-## URL: https://github.com/fanghongliang/NodeProject
+### Git: https://github.com/fanghongliang/NodeProject
 
+----
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
