@@ -1,7 +1,7 @@
 # Vue-travel
 ------
 > A Vue.js project  
-> 模仿去哪网的界面，使用Vue实现
+> 模仿去哪网的界面，使用Vue、Vue-route、Vuex、Axios实现前台，后台由Express提供restApi接口，后台项目见 https://github.com/fanghongliang/NodeProject
 
 ## Build Setup
 
